@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Альона — майстер нігтьового сервісу, Волочиськ</title>
+<meta name="description" content="Манікюр, покриття, нарощування й педикюр у Волочиську. Вул. Музейна, 4. Запис у директ @aliona_nails.vol або за телефоном.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Jost:wght@300;400;500&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#2A2523}a:hover{color:#7A5C4E}
+html{scroll-behavior:smooth}
+@keyframes fadeUp { from { opacity: 0; transform: translateY(24px) } to { opacity: 1; transform: none } }
+@keyframes floatA { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-10px) } }
+@keyframes floatB { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(9px) } }
+@keyframes rot { to { transform: rotate(360deg) } }
+.fu { animation: fadeUp 1s cubic-bezier(0.2, 0.7, 0.2, 1) both }
+.fa { animation: floatA 8s ease-in-out infinite }
+.fb { animation: floatB 9s ease-in-out infinite }
+.rot { animation: rot 48s linear infinite }
+@keyframes unveil { from { clip-path: inset(0 0 100% 0) } to { clip-path: inset(0 0 0 0) } }
+@keyframes growX { from { transform: scaleX(0) } to { transform: scaleX(1) } }
+@keyframes slideX { to { transform: translateX(-50%) } }
+.unv { animation: unveil 1.4s cubic-bezier(0.7, 0, 0.2, 1) both }
+.gx { transform-origin: left center; animation: growX 1.3s cubic-bezier(0.2, 0.7, 0.2, 1) both }
+.mq { animation: slideX 40s linear infinite }
+@supports (animation-timeline: view()) {
+.rv { animation: fadeUp linear both; animation-timeline: view(); animation-range: entry 0% entry 40% }
+.unv-s { animation: unveil linear both; animation-timeline: view(); animation-range: entry 0% entry 75% }
+.gx { animation: growX linear both; animation-timeline: view(); animation-range: entry 0% entry 80% }
+}
+.btn { transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 10px 22px rgba(90, 62, 48, 0.2) }
+.lnk { text-decoration: none; background-image: linear-gradient(currentColor, currentColor); background-size: 0 1px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size 0.35s ease }
+.lnk:hover { background-size: 100% 1px }
+.tile .ph { overflow: hidden; border-radius: 4px; box-shadow: 0 30px 50px -28px rgba(90, 62, 48, 0.45), 0 6px 16px rgba(90, 62, 48, 0.12) }
+.tile .ph img { transition: transform 1s cubic-bezier(0.2, 0.7, 0.2, 1) }
+.tile:hover .ph img { transform: scale(1.05) }
+.tile:nth-child(even) { margin-top: 48px }
+.row { transition: padding-left 0.3s ease }
+.row:hover { padding-left: 6px }
+.svc { grid-template-columns: repeat(4, auto) }
+@media (max-width: 520px) {
+.svc { grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100% }
+.svc span:nth-child(3) { border-left: 0 !important }
+.svc span:nth-child(n+3) { border-top: 1px solid rgba(122, 92, 78, 0.3) }
+}
+@media (max-width: 700px) {
+.tile:nth-child(even) { margin-top: 0 }
+.himg { order: -1 }
+.top-bar { justify-content: center !important; text-align: center }
+}
+@media (prefers-reduced-motion: reduce) {
+* { animation: none !important; transition: none !important }
+}
+</style>
+</head>
+<body>
+<div style="width: 100%; box-sizing: border-box; background: #F3EEE8; color: #2A2523; font-family: 'Jost', sans-serif; font-weight: 300; font-size: 17px; line-height: 1.7; overflow: hidden">
+
+<!-- Шапка-журнал -->
+<header style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 14px clamp(20px, 5vw, 72px) 0">
+<div class="top-bar" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 24px; padding-bottom: 14px; border-bottom: 1px solid rgba(42, 37, 35, 0.2); font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A403C; font-weight: 400">
+<span>Волочиськ</span>
+<span>Запис через директ</span>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 22px 0 6px">
+<img src="images/logo.png" alt="Логотип Aliona_nails.vol" style="display: block; width: 84px; height: 84px">
+<nav style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0 14px; padding-top: 8px">
+<a class="lnk" href="#about" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 6px; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 400; color: #2A2523">Про мене</a>
+<a class="lnk" href="#works" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 6px; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 400; color: #2A2523">Роботи</a>
+<a class="lnk" href="#studio" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 6px; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 400; color: #2A2523">Кабінет</a>
+<a class="lnk" href="#price" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 6px; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 400; color: #2A2523">Прайс</a>
+<a class="lnk" href="#contact" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 6px; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 400; color: #2A2523">Контакти</a>
+</nav>
+</div>
+<div style="height: 1px; background: rgba(42, 37, 35, 0.2)"></div>
+</header>
+
+<!-- Обкладинка -->
+<section style="position: relative">
+<div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: clamp(32px, 5vw, 72px) clamp(20px, 5vw, 72px) clamp(56px, 8vw, 112px); display: flex; flex-wrap: wrap; align-items: center; gap: 48px 56px">
+
+<div class="htxt" style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<div class="fu" style="display: flex; align-items: center; gap: 12px; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #4A403C; font-weight: 400; animation-delay: 0.05s">
+<svg class="rot" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A5C4E" stroke-width="1"><ellipse cx="12" cy="6" rx="2.6" ry="4.4"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(72 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(144 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(216 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(288 12 12)"></ellipse><circle cx="12" cy="12" r="1.2"></circle></svg>
+Майстер нігтьового сервісу
+</div>
+<h1 class="fu" style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(48px, 7vw, 92px); line-height: 1.0; letter-spacing: -0.015em; color: #2A2523; animation-delay: 0.15s">Привіт, я <em style="font-style: italic; font-weight: 400">Альона</em></h1>
+<p class="fu" style="margin: 0; font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: clamp(22px, 2.8vw, 32px); line-height: 1.3; color: #4A403C; animation-delay: 0.28s">Дбаю про красу ваших рук і ніжок</p>
+<p class="fu" style="margin: 0; max-width: 460px; font-size: 18px; color: #2A2523; animation-delay: 0.4s">Час для себе: бездоганна чистота, турбота й акуратний результат. Чекаю на вас!</p>
+<div class="fu svc" style="display: inline-grid; align-self: flex-start; max-width: 100%; box-sizing: border-box; border: 1px solid rgba(122, 92, 78, 0.45); border-radius: 4px; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 400; color: #4A403C; animation-delay: 0.5s">
+<span style="padding: 10px 16px; white-space: nowrap; text-align: center">Манікюр</span>
+<span style="padding: 10px 16px; white-space: nowrap; text-align: center; border-left: 1px solid rgba(122, 92, 78, 0.3)">Покриття</span>
+<span class="svc3" style="padding: 10px 16px; white-space: nowrap; text-align: center; border-left: 1px solid rgba(122, 92, 78, 0.3)">Нарощування</span>
+<span style="padding: 10px 16px; white-space: nowrap; text-align: center; border-left: 1px solid rgba(122, 92, 78, 0.3)">Педикюр</span>
+</div>
+<div class="fu" style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; animation-delay: 0.6s">
+<a class="btn" href="https://www.instagram.com/aliona_nails.vol/" style="display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; min-height: 52px; padding: 12px 34px; border-radius: 999px; background: #7A5C4E; color: #FFF9F5; text-decoration: none; font-weight: 400; font-size: 16px; letter-spacing: 0.03em">Записатись у директ</a>
+<a class="btn" href="#price" style="display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; min-height: 52px; padding: 12px 34px; border-radius: 999px; background: #EAD5CA; border: 1px solid rgba(122, 92, 78, 0.25); color: #2A2523; text-decoration: none; font-weight: 400; font-size: 16px; letter-spacing: 0.03em">Дивитись прайс</a>
+</div>
+</div>
+
+<div class="himg" style="flex: 1 1 380px; min-width: 0; max-width: 560px; width: 100%; margin: 0 auto; position: relative; aspect-ratio: 4 / 5">
+<div aria-hidden="true" style="position: absolute; left: 7%; top: 4%; width: 80%; height: 86%; border: 1px solid rgba(122, 92, 78, 0.55); border-radius: 4px"></div>
+<div class="fu" style="position: absolute; left: 0; top: 0; width: 80%; height: 86%; border-radius: 4px; box-shadow: 0 40px 60px -30px rgba(90, 62, 48, 0.5), 0 8px 20px rgba(90, 62, 48, 0.15); animation-delay: 0.1s">
+<img class="unv" src="images/hydrangea-french.jpg" alt="Френч на нюдовій базі на тлі блакитних гортензій" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; border-radius: 4px; animation-delay: 0.3s">
+</div>
+<div class="fu" style="position: absolute; right: 0; bottom: 0; width: 46%; height: 40%; animation-delay: 0.5s">
+<div class="fb" style="width: 100%; height: 100%">
+<img src="images/nude-ring.jpg" alt="Ніжно-рожевий манікюр" style="display: block; width: 100%; height: 100%; box-sizing: border-box; object-fit: cover; object-position: 50% 35%; border: 6px solid #F3EEE8; border-radius: 4px; box-shadow: 0 28px 44px -22px rgba(90, 62, 48, 0.55), 0 6px 14px rgba(90, 62, 48, 0.15)">
+</div>
+</div>
+<svg class="rot" aria-hidden="true" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#7A5C4E" stroke-width="0.8" style="position: absolute; right: 4%; top: 2%"><ellipse cx="12" cy="6" rx="2.6" ry="4.4"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(72 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(144 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(216 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(288 12 12)"></ellipse><circle cx="12" cy="12" r="1.2"></circle></svg>
+</div>
+
+</div>
+</section>
+
+<!-- Стрічка -->
+<div aria-hidden="true" style="border-top: 1px solid rgba(42, 37, 35, 0.2); border-bottom: 1px solid rgba(42, 37, 35, 0.2); overflow: hidden; padding: 16px 0">
+<div class="mq" style="display: flex; width: max-content; align-items: center; font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: clamp(26px, 3vw, 36px); color: #4A403C; white-space: nowrap">
+<div style="display: flex; align-items: center; gap: 36px; padding-right: 36px">
+<span>Турбота</span><span style="width: 6px; height: 6px; border-radius: 50%; background: #7A5C4E"></span>
+<span>Акуратність</span><span style="width: 6px; height: 6px; border-radius: 50%; background: #7A5C4E"></span>
+<span>Деталі</span><span style="width: 6px; height: 6px; border-radius: 50%; background: #7A5C4E"></span>
+<span>Настрій</span><span style="width: 6px; height: 6px; border-radius: 50%; background: #7A5C4E"></span>
+<span>Стерильність</span><span style="width: 6px; height: 6px; border-radius: 50%; background: #7A5C4E"></span>
+</div>
+<div style="display: flex; align-items: center; gap: 36px; padding-right: 36px">
+<span>Турбота</span><span style="width: 6px; height: 6px; border-radius: 50%; background: #7A5C4E"></span>
+<span>Акуратність</span><span style="width: 6px; height: 6px; border-radius: 50%; background: #7A5C4E"></span>
+<span>Деталі</span><span style="width: 6px; height: 6px; border-radius: 50%; background: #7A5C4E"></span>
+<span>Настрій</span><span style="width: 6px; height: 6px; border-radius: 50%; background: #7A5C4E"></span>
+<span>Стерильність</span><span style="width: 6px; height: 6px; border-radius: 50%; background: #7A5C4E"></span>
+</div>
+</div>
+</div>
+
+<!-- Цитата -->
+<section style="background: #EAE3DA; border-top: 1px solid rgba(42, 37, 35, 0.14); border-bottom: 1px solid rgba(42, 37, 35, 0.14)">
+<div class="rv" style="max-width: 920px; margin: 0 auto; box-sizing: border-box; padding: clamp(48px, 7vw, 88px) clamp(20px, 5vw, 72px); display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center">
+<div style="display: flex; align-items: center; gap: 16px; width: 100%; max-width: 360px">
+<span style="flex: 1; height: 1px; background: rgba(42, 37, 35, 0.3)"></span>
+<svg class="rot" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7A5C4E" stroke-width="1"><ellipse cx="12" cy="6" rx="2.6" ry="4.4"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(72 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(144 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(216 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(288 12 12)"></ellipse><circle cx="12" cy="12" r="1.2"></circle></svg>
+<span style="flex: 1; height: 1px; background: rgba(42, 37, 35, 0.3)"></span>
+</div>
+<p style="margin: 0; font-family: 'Playfair Display', serif; font-style: italic; font-weight: 400; font-size: clamp(26px, 3.8vw, 46px); line-height: 1.25; color: #2A2523">Для мене головне — щоб ви пішли від мене з усмішкою</p>
+</div>
+</section>
+
+<!-- Про мене -->
+<section id="about">
+<div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: clamp(56px, 8vw, 120px) clamp(20px, 5vw, 72px); display: flex; flex-wrap: wrap; align-items: center; gap: 56px 80px">
+<div class="rv" style="flex: 1 1 320px; max-width: 520px; min-width: 0; margin: 0 auto; position: relative">
+<div aria-hidden="true" style="position: absolute; left: 18px; top: 18px; right: -18px; bottom: -18px; border: 1px solid rgba(122, 92, 78, 0.55); border-radius: 4px"></div>
+<div style="position: relative; border-radius: 4px; box-shadow: 0 40px 60px -30px rgba(90, 62, 48, 0.45), 0 8px 20px rgba(90, 62, 48, 0.12)"><img class="unv-s" src="images/alena.jpg" alt="Портрет у світлому інтер'єрі" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 60%; border-radius: 4px"></div>
+</div>
+<div class="rv" style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; align-items: center; gap: 14px; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #4A403C; font-weight: 400"><span>01</span><span class="gx" style="display: block; width: 44px; height: 1px; background: #2A2523"></span>Про мене</div>
+<h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(38px, 5vw, 64px); line-height: 1.06; letter-spacing: -0.01em; color: #2A2523">Рада <em style="font-style: italic; font-weight: 400">знайомству</em></h2>
+<p style="margin: 0; max-width: 540px; font-size: 18px"><span style="float: left; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 76px; line-height: 0.82; padding: 6px 12px 0 0; color: #7A5C4E">Я</span> з Волочиська, і тут на вас чекає мій затишний кабінет, де кожна процедура — це час для себе, спокою та краси.</p>
+<p style="margin: 0; max-width: 540px; font-size: 18px">Я працюю індивідуально, тому вся моя увага — вам, вашим побажанням і деталям, які створюють ідеальний результат.</p>
+<p style="margin: 0; max-width: 540px; font-size: 18px">Розкажіть, який манікюр вам до душі, а я допоможу підібрати форму, колір і дизайн, що пасуватимуть саме вам.</p>
+</div>
+</div>
+</section>
+
+<!-- Роботи -->
+<section id="works" style="background: #EAE3DA">
+<div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: clamp(56px, 8vw, 120px) clamp(20px, 5vw, 72px)">
+<div class="rv" style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 32px; margin-bottom: clamp(32px, 5vw, 56px)">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; align-items: center; gap: 14px; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #4A403C; font-weight: 400"><span>02</span><span class="gx" style="display: block; width: 44px; height: 1px; background: #2A2523"></span>Галерея</div>
+<h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(38px, 5vw, 64px); line-height: 1.06; letter-spacing: -0.01em; color: #2A2523">Мої <em style="font-style: italic; font-weight: 400">роботи</em></h2>
+</div>
+<a class="lnk" href="https://www.instagram.com/aliona_nails.vol/" style="display: inline-flex; align-items: center; min-height: 44px; font-weight: 400; font-size: 16px">Більше — в Instagram</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 40px 32px">
+<figure class="tile rv" style="margin: 0"><div class="ph"><img class="unv-s" src="images/flower.jpg" alt="Рожевий нюд з одним акцентним нігтем" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover"></div></figure>
+<figure class="tile rv" style="margin: 0"><div class="ph"><img class="unv-s" src="images/french.jpg" alt="Білий френч із перламутровим покриттям" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover"></div></figure>
+<figure class="tile rv" style="margin: 0"><div class="ph"><img class="unv-s" src="images/wheat.jpg" alt="Молочний манікюр з тонким малюнком" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover"></div></figure>
+<figure class="tile rv" style="margin: 0"><div class="ph"><img class="unv-s" src="images/hydrangea-french.jpg" alt="Френч на нюдовій базі на тлі блакитних гортензій" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover"></div></figure>
+<figure class="tile rv" style="margin: 0"><div class="ph"><img class="unv-s" src="images/pedicure-red.jpg" alt="Педикюр із червоним покриттям" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover"></div></figure>
+<figure class="tile rv" style="margin: 0"><div class="ph"><img class="unv-s" src="images/nude-ring.jpg" alt="Ніжно-рожевий манікюр" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%"></div></figure>
+</div>
+</div>
+</section>
+
+<!-- Кабінет і стерильність -->
+<section id="studio" style="background: #FBF8F4; border-top: 1px solid rgba(42, 37, 35, 0.12); border-bottom: 1px solid rgba(42, 37, 35, 0.12)">
+<div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: clamp(56px, 8vw, 120px) clamp(20px, 5vw, 72px); display: flex; flex-wrap: wrap; align-items: center; gap: 56px 80px">
+
+<div class="rv" style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; align-items: center; gap: 14px; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #4A403C; font-weight: 400"><span>03</span><span class="gx" style="display: block; width: 44px; height: 1px; background: #2A2523"></span>Кабінет</div>
+<h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(38px, 5vw, 64px); line-height: 1.06; letter-spacing: -0.01em; color: #2A2523">Стерильність — <em style="font-style: italic; font-weight: 400">без компромісів</em></h2>
+<p style="margin: 0; max-width: 500px; font-size: 18px">Ваша безпека та здоров’я — мій пріоритет. Тому я приділяю особливу увагу чистоті робочого простору та ретельній обробці інструментів перед кожною процедурою.</p>
+<div style="display: flex; flex-direction: column; margin-top: 8px; border-bottom: 1px solid rgba(42, 37, 35, 0.2)">
+<div style="display: flex; gap: 22px; align-items: baseline; padding: 20px 0; border-top: 1px solid rgba(42, 37, 35, 0.2)">
+<div><div style="font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500">Обробка інструментів</div><div style="font-size: 16px; color: #4A403C">Кожен інструмент проходить усі необхідні етапи дезінфекції та стерилізації.</div></div>
+</div>
+<div style="display: flex; gap: 22px; align-items: baseline; padding: 20px 0; border-top: 1px solid rgba(42, 37, 35, 0.2)">
+<div><div style="font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500">Чисте повітря</div><div style="font-size: 16px; color: #4A403C">Потужна витяжка допомагає ефективно збирати пил під час процедури.</div></div>
+</div>
+<div style="display: flex; gap: 22px; align-items: baseline; padding: 20px 0; border-top: 1px solid rgba(42, 37, 35, 0.2)">
+<div><div style="font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500">Комфорт і чистота</div><div style="font-size: 16px; color: #4A403C">Охайне робоче місце, антисептик і турбота про ваш комфорт у кожній деталі.</div></div>
+</div>
+</div>
+</div>
+
+<div class="rv" style="flex: 1 1 320px; max-width: 480px; min-width: 0; margin: 0 auto; position: relative">
+<div aria-hidden="true" style="position: absolute; left: 18px; top: 18px; right: -18px; bottom: -18px; border: 1px solid rgba(122, 92, 78, 0.55); border-radius: 4px"></div>
+<div style="position: relative; border-radius: 4px; box-shadow: 0 40px 60px -30px rgba(90, 62, 48, 0.45), 0 8px 20px rgba(90, 62, 48, 0.12)"><img class="unv-s" src="images/workspace.jpg" alt="Робоче місце майстра: світлий стіл, лампа, витяжка й антисептик" style="display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 70%; border-radius: 4px"></div>
+<div class="fb" style="position: absolute; left: 12px; bottom: 36px; width: 124px; height: 124px; border-radius: 50%; background: #F3EEE8; box-shadow: 0 18px 30px -14px rgba(90, 62, 48, 0.45)">
+<div class="rot" aria-hidden="true" style="position: absolute; left: 6px; top: 6px; right: 6px; bottom: 6px; border: 1px dashed rgba(122, 92, 78, 0.65); border-radius: 50%"></div>
+<div style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-align: center">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7A5C4E" stroke-width="1"><ellipse cx="12" cy="6" rx="2.6" ry="4.4"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(72 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(144 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(216 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(288 12 12)"></ellipse><circle cx="12" cy="12" r="1.2"></circle></svg>
+<span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500; color: #2A2523; line-height: 1.3">Чисто<br>стерильно</span>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Прайс -->
+<section id="price">
+<div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: clamp(56px, 8vw, 120px) clamp(20px, 5vw, 72px); display: flex; flex-direction: column; gap: clamp(32px, 5vw, 56px)">
+<div class="rv" style="display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; align-items: center; gap: 14px; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #4A403C; font-weight: 400"><span>04</span><span class="gx" style="display: block; width: 44px; height: 1px; background: #2A2523"></span>Послуги</div>
+<h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(38px, 5vw, 64px); line-height: 1.06; letter-spacing: -0.01em; color: #2A2523">Прайс</h2>
+<p style="margin: 0; max-width: 480px; color: #4A403C">Усе прозоро. Є запитання — пишіть, з радістю відповім.</p>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 48px 80px; align-items: flex-start">
+
+<div class="rv" style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<h3 style="margin: 0 0 6px; padding-bottom: 14px; border-bottom: 1px solid #2A2523; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 34px; color: #2A2523">Манікюр</h3>
+<div class="row rv" style="display: flex; align-items: baseline; gap: 12px"><span>Гігієнічний манікюр</span><span style="flex: 1; min-width: 16px; border-bottom: 1px dotted rgba(42, 37, 35, 0.4)"></span><span style="white-space: nowrap; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 22px">400 ₴</span></div>
+<div class="row rv" style="display: flex; align-items: baseline; gap: 12px"><span>Манікюр + укріплення + покриття<br><span style="font-size: 14px; color: #4A403C">покриття довжини 3 і більше: +100 ₴</span></span><span style="flex: 1; min-width: 16px; border-bottom: 1px dotted rgba(42, 37, 35, 0.4)"></span><span style="white-space: nowrap; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 22px">750 ₴</span></div>
+<div class="row rv" style="display: flex; align-items: baseline; gap: 12px"><span>Нарощування, довжина 1–2</span><span style="flex: 1; min-width: 16px; border-bottom: 1px dotted rgba(42, 37, 35, 0.4)"></span><span style="white-space: nowrap; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 22px">900 ₴</span></div>
+<div class="row rv" style="display: flex; align-items: baseline; gap: 12px"><span>Нарощування, довжина 3–4</span><span style="flex: 1; min-width: 16px; border-bottom: 1px dotted rgba(42, 37, 35, 0.4)"></span><span style="white-space: nowrap; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 22px">1000 ₴</span></div>
+<div class="row rv" style="display: flex; align-items: baseline; gap: 12px"><span>Екстремальне нарощування, довжина 5 та більше</span><span style="flex: 1; min-width: 16px; border-bottom: 1px dotted rgba(42, 37, 35, 0.4)"></span><span style="white-space: nowrap; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 22px">1200 ₴</span></div>
+<div class="row rv" style="display: flex; align-items: baseline; gap: 12px"><span>Підняття ключових / ремонт (один ніготь)</span><span style="flex: 1; min-width: 16px; border-bottom: 1px dotted rgba(42, 37, 35, 0.4)"></span><span style="white-space: nowrap; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 22px">50 ₴</span></div>
+
+<h3 style="margin: 28px 0 6px; padding-bottom: 14px; border-bottom: 1px solid #2A2523; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 34px; color: #2A2523">Дизайн</h3>
+<div class="row rv" style="display: flex; align-items: baseline; gap: 12px"><span>Френч (на всі нігті)</span><span style="flex: 1; min-width: 16px; border-bottom: 1px dotted rgba(42, 37, 35, 0.4)"></span><span style="white-space: nowrap; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 22px">100 ₴</span></div>
+<div class="row rv" style="display: flex; align-items: baseline; gap: 12px"><span>Втирка (на всі нігті)</span><span style="flex: 1; min-width: 16px; border-bottom: 1px dotted rgba(42, 37, 35, 0.4)"></span><span style="white-space: nowrap; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 22px">100 ₴</span></div>
+<div class="row rv" style="display: flex; align-items: baseline; gap: 12px"><span>Малюнки</span><span style="flex: 1; min-width: 16px; border-bottom: 1px dotted rgba(42, 37, 35, 0.4)"></span><span style="white-space: nowrap; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 22px">від 10 ₴</span></div>
+<p style="margin: 6px 0 0; font-size: 14px; color: #4A403C">Ціну дизайну уточнюйте перед візитом, щоб уникнути непорозумінь.</p>
+</div>
+
+<div class="rv" style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<h3 style="margin: 0 0 6px; padding-bottom: 14px; border-bottom: 1px solid #2A2523; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 34px; color: #2A2523">Педикюр</h3>
+<div class="row rv" style="display: flex; align-items: baseline; gap: 12px"><span>Повний комплекс: обробка стопи, пальчиків + покриття гель-лаком</span><span style="flex: 1; min-width: 16px; border-bottom: 1px dotted rgba(42, 37, 35, 0.4)"></span><span style="white-space: nowrap; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 22px">900 ₴</span></div>
+<div class="row rv" style="display: flex; align-items: baseline; gap: 12px"><span>Обробка стопи + пальчиків без покриття гель-лаком</span><span style="flex: 1; min-width: 16px; border-bottom: 1px dotted rgba(42, 37, 35, 0.4)"></span><span style="white-space: nowrap; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 22px">600 ₴</span></div>
+<div class="row rv" style="display: flex; align-items: baseline; gap: 12px"><span>Обробка пальчиків + покриття гель-лаком</span><span style="flex: 1; min-width: 16px; border-bottom: 1px dotted rgba(42, 37, 35, 0.4)"></span><span style="white-space: nowrap; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 22px">700 ₴</span></div>
+<div class="row rv" style="display: flex; align-items: baseline; gap: 12px"><span>Обробка глибоких тріщин</span><span style="flex: 1; min-width: 16px; border-bottom: 1px dotted rgba(42, 37, 35, 0.4)"></span><span style="white-space: nowrap; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 22px">+100 ₴</span></div>
+<div class="row rv" style="display: flex; align-items: baseline; gap: 12px"><span>Френч</span><span style="flex: 1; min-width: 16px; border-bottom: 1px dotted rgba(42, 37, 35, 0.4)"></span><span style="white-space: nowrap; font-family: 'Playfair Display', serif; font-weight: 500; font-size: 22px">+100 ₴</span></div>
+<div style="margin-top: 24px; padding: 20px 24px; border: 1px solid rgba(122, 92, 78, 0.6); border-radius: 4px; display: flex; gap: 14px; align-items: flex-start">
+<svg class="rot" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7A5C4E" stroke-width="1" style="flex: none; margin-top: 4px"><ellipse cx="12" cy="6" rx="2.6" ry="4.4"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(72 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(144 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(216 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(288 12 12)"></ellipse><circle cx="12" cy="12" r="1.2"></circle></svg>
+<div>
+<div style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 20px; color: #2A2523">Важливо</div>
+<div style="font-size: 16px">Я не подолог, тож з проблемними та вростлими нігтями не працюю.</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Контакти -->
+<section id="contact" style="position: relative; background: #D3CABF">
+<div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: clamp(56px, 8vw, 120px) clamp(20px, 5vw, 72px); display: flex; flex-wrap: wrap; gap: 48px 80px">
+<div class="rv" style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; align-items: center; gap: 14px; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #3A322F; font-weight: 400"><span>05</span><span class="gx" style="display: block; width: 44px; height: 1px; background: #2A2523"></span>Контакти</div>
+<h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 500; font-size: clamp(38px, 5vw, 64px); line-height: 1.06; letter-spacing: -0.01em; color: #2A2523">Чекаю на ваше <em style="font-style: italic; font-weight: 400">повідомлення</em></h2>
+<p style="margin: 0; max-width: 470px; font-size: 18px; color: #2A2523">Підкажу по послугах і відповім на будь-які запитання.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="btn" href="https://www.instagram.com/aliona_nails.vol/" style="display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; min-height: 52px; padding: 12px 34px; border-radius: 999px; background: #7A5C4E; color: #FFF9F5; text-decoration: none; font-weight: 400; font-size: 16px; letter-spacing: 0.03em">Написати в Instagram</a>
+<a class="btn" href="tel:+380987293028" style="display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; min-height: 52px; padding: 12px 34px; border-radius: 999px; background: #EAD5CA; border: 1px solid rgba(122, 92, 78, 0.25); color: #2A2523; text-decoration: none; font-weight: 400; font-size: 16px; letter-spacing: 0.03em">Зателефонувати</a>
+</div>
+</div>
+<div class="rv" style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<div style="font-family: 'Playfair Display', serif; font-weight: 500; font-size: 32px; padding-bottom: 14px; border-bottom: 1px solid #2A2523; margin-bottom: 10px">Альона</div>
+<a href="tel:+380987293028" style="display: flex; align-items: center; gap: 16px; min-height: 56px; font-size: 22px; text-decoration: none; border-bottom: 1px solid rgba(42, 37, 35, 0.2)"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2A2523" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10.5"></circle><path d="M8.5 7.5c.4-.4 1-.4 1.3 0l1 1.4c.3.4.2.9-.1 1.2l-.6.6c.8 1.4 1.9 2.5 3.3 3.3l.6-.6c.3-.3.8-.4 1.2-.1l1.4 1c.4.3.4.9 0 1.3l-.8.8c-.6.6-1.5.8-2.3.5-3-1.1-5.3-3.4-6.4-6.4-.3-.8-.1-1.7.5-2.3z"></path></svg>(380) 98 729 3028</a>
+<a href="https://www.instagram.com/aliona_nails.vol/" style="display: flex; align-items: center; gap: 16px; min-height: 56px; font-size: 22px; text-decoration: none; border-bottom: 1px solid rgba(42, 37, 35, 0.2)"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2A2523" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.2" cy="6.8" r="1" fill="#2A2523" stroke="none"></circle></svg>@aliona_nails.vol</a>
+<div style="display: flex; align-items: flex-start; gap: 16px; padding: 14px 0; font-size: 22px; border-bottom: 1px solid rgba(42, 37, 35, 0.2)"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2A2523" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="M12 21s-7-6.2-7-11a7 7 0 1114 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span>м. Волочиськ, вул. Музейна, 4<br><a class="lnk" href="https://www.google.com/maps/search/?api=1&amp;query=%D0%B2%D1%83%D0%BB.+%D0%9C%D1%83%D0%B7%D0%B5%D0%B9%D0%BD%D0%B0+4%2C+%D0%92%D0%BE%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D1%8C%D0%BA" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 16px; font-weight: 400">Відкрити на карті</a></span></div>
+<div style="padding-top: 12px; font-size: 16px; color: #2A2523">Вихідний — вівторок</div>
+</div>
+</div>
+</section>
+
+<!-- Підвал -->
+<footer>
+<div style="max-width: 1280px; margin: 0 auto; box-sizing: border-box; padding: 44px clamp(20px, 5vw, 72px) 36px; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
+<img src="images/logo.png" alt="Логотип Aliona_nails.vol" style="display: block; width: 96px; height: 96px">
+<div style="display: flex; align-items: center; gap: 16px; width: 100%; max-width: 360px">
+<span style="flex: 1; height: 1px; background: rgba(42, 37, 35, 0.3)"></span>
+<svg class="rot" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A5C4E" stroke-width="1"><ellipse cx="12" cy="6" rx="2.6" ry="4.4"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(72 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(144 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(216 12 12)"></ellipse><ellipse cx="12" cy="6" rx="2.6" ry="4.4" transform="rotate(288 12 12)"></ellipse><circle cx="12" cy="12" r="1.2"></circle></svg>
+<span style="flex: 1; height: 1px; background: rgba(42, 37, 35, 0.3)"></span>
+</div>
+<div style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 20px; color: #4A403C">Дякую, що завітали</div>
+<div style="font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: #4A403C; font-weight: 400"><a class="lnk" href="https://www.instagram.com/aliona_nails.vol/" style="color: #4A403C">@aliona_nails.vol</a></div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>

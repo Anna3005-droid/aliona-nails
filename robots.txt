@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aliona-nails-volochysk.vercel.app/sitemap.xml
